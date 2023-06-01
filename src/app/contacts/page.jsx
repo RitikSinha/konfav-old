@@ -1,7 +1,7 @@
 import React from "react";
 import LayoutScreen from "../components/layoutScreen";
 const page = () => {
-  return <LayoutScreen>contacts</LayoutScreen>;
+  return <LayoutScreen></LayoutScreen>;
 };
 
 export default page;

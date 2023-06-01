@@ -1,10 +1,28 @@
 import React from "react";
 import Link from "next/link";
+
 const Navbar = () => {
+  function greetUser() {
+    var currentTime = new Date();
+    var currentHour = currentTime.getHours();
+    var greeting;
+
+    if (currentHour >= 5 && currentHour < 12) {
+      greeting = "Good Morning";
+    } else if (currentHour >= 12 && currentHour < 17) {
+      greeting = "Good Afternoon";
+    } else if (currentHour >= 17 && currentHour < 21) {
+      greeting = "Good Evening";
+    } else {
+      greeting = "Good Night";
+    }
+
+    return greeting;
+  }
   return (
-    <div className="navbar  ">
-      <div className="navbar-start px-2">
-        <a className=" font-semibold text-xl">Good afternoon</a>
+    <div className="navbar px-2">
+      <div className="navbar-start ">
+        <a className=" font-bold text-xl">{greetUser()}</a>
       </div>
       <div className="navbar-center"></div>
       <div className="navbar-end">
