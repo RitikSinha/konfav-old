@@ -9,7 +9,7 @@ const LayoutScreen = ({ children }) => {
   return (
     <main>
       <div className="min-h-screen flex flex-col  bg-gradient-to-t from-[#000000] via-[#121212] to-[#212121] ">
-        {"" === pathname ? "" : <Navbar />}
+        {"" === pathname || "contacts" === pathname ? "" : <Navbar />}
         {children}
         <BottomNavigation />
       </div>
