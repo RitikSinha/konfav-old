@@ -2,11 +2,12 @@ import React from "react";
 import LayoutScreen from "../components/layoutScreen";
 import ProfileCard from "../components/profileCard";
 import ProfileSqCard from "../components/ProfileSqCard";
+import Navbar from "../components/Navbar";
 const page = () => {
   return (
     <LayoutScreen>
-      <main className="mx-3 py-5">
-        <h1 className="text-3xl font-bold">Contacts</h1>
+      <main className="px-3 py-5">
+        <Navbar title={"Contacts"} />
         <div className="relative my-5">
           <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500">
             <svg

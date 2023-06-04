@@ -4,7 +4,7 @@ const ProfileSqCard = () => {
   return (
     <div className="w-36 flex flex-col items-center text-center bg-base-300 p-2 rounded-lg m-2">
       <div className="avatar mr-3">
-        <div className="w-16 rounded-full">
+        <div className="w-14 rounded-full">
           <Image
             src="https://randomuser.me/api/portraits/men/85.jpg"
             alt="profile"
